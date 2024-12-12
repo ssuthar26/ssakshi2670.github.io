@@ -57,7 +57,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-position: center;
     padding: 300px;
-    filter: blur(10px);
+    filter: blur(8px);
 
 }
   

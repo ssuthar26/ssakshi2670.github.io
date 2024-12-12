@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #65412aba ;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Section Heading Styling */
+.section-heading {
+    font-size: 1.6em;
+    color: #2a9d8f;
+    margin-bottom: 140px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+/* Icon Styling */
+.section-heading i {
+    font-size: 1.5em;
+    color: #2a9d8f;
+    position: absolute;
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Events Section */
+.events {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 30px; 
+}
+
+/* Event Box Styling */
+.event-box {
+    background-color: #fff; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
+}
+
+
+.event-box:hover {
+    border-color: #2a9d8f; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    background-color: #f8f8f8;
+}
+
+.event-box h3 {
+    font-size: 1.6em;
+    color: #6F4F37; 
+    margin-bottom: 10px;
+}
+
+.event-box .event-date {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.event-box p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.past-event {
+    background-color: #fff; 
+    border-color: #ddd;
+}
+
+/* Responsive Design: Mobile Layout */
+@media (max-width: 768px) {
+    .events {
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* Special Offer Section */
+.special-offer {
+    background-color: #fce2ab; 
+    border-radius: 10px;
+    padding: 30px;
+    margin: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.special-offer .section-heading {
+    font-size: 2.2em;
+    color: #d56f2a;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.special-offer .offer-details {
+    margin-bottom: 20px;
+}
+
+.special-offer .offer-text {
+    font-size: 1.8em;
+    color: #d56f2a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.special-offer .offer-description {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.special-offer .offer-date {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.special-offer .cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.special-offer .cta-button {
+    background-color: #d56f2a; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.special-offer .cta-button:hover {
+    background-color: #b45c21;
+}
+
+/* Footer */
+footer{
+    background-color: #3E2723;
+    color: #F2E2D2; 
+
+}
+
+footer .footer-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: #f6bb46;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .contact-info {
+    margin-top: 20px;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #4B3C31; 
+    padding: 10px 0;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+}
+
+footer .footer-links a {
+    color: #D28E56; 
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
